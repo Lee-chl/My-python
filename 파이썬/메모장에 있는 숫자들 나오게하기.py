@@ -1,0 +1,12 @@
+filea=open('data.txt','r')
+a=filea.readline()
+print(a)
+aa=filea.readline()
+print(aa)
+aaa=filea.readline()
+print(aaa)
+ab=filea.readline()
+print(ab)
+abb=filea.readline()
+print(abb)
+filea.close

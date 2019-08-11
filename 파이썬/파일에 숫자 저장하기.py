@@ -1,0 +1,7 @@
+filea=open('data.txt','w')
+filea.write('4 100 90 85 90 \n')
+filea.write('5 50 40 30 15 \n')
+filea.write('3 10 35 40 50 \n')
+filea.write('8 95 50 87 92  \n')
+filea.write('2 94 88 54 24 \n')
+filea.close()
