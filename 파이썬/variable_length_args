@@ -1,0 +1,22 @@
+def asterosl_test(a,b, *args):
+    print(list(args))
+    print(type(args))
+    return a + b + sum(args)
+
+print(asterosl_test(1,2,3,4,5,6,7,8,9))        
+# args는 튜플로 받음
+
+# 키워드 가변인자
+def kwargs_test_1(**kwargs):
+    print(kwargs)
+    print(type(kwargs)) # dict 타입으로 받음
+    
+kwargs_test_1(first=3,setcond=4,third=5)
+
+print("====================================")
+# 혼합
+def mixed_test(one, two=3, *args, **kwargs): # 순서 지키기
+    print(one+two+sum(args))
+    print(args)
+    print(kwargs)
+mixed_test(10, 30, 3, 5, 6, 7, first=3, second=4, third=5)
